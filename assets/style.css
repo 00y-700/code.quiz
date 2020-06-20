@@ -56,3 +56,10 @@ button {
     border-color: rgb(53, 16, 88);
     text-align: left;
 }
+
+.timer-card {
+    width: 15%;
+    margin: auto;
+    margin-bottom: 2%;
+    padding-top: 1%;
+}
