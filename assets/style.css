@@ -5,7 +5,8 @@
 .title-card {
     background-color: rgb(190, 241, 241);
     color: rgb(53, 16, 88);
-    border-radius: 25px;
+    border-radius: 5px;
+    border-color: rgb(53, 16, 88);
     width: 33%;
     margin: auto;
     padding-top: .33%;
@@ -21,6 +22,9 @@
     height: 75%;
 }
 
+.col-expand-sm {
+    border-color: rgb(53, 16, 88);
+}
 .progress {
     width: 75%;
     margin: auto;
@@ -29,9 +33,14 @@ button {
     margin: 1em;
     width: 25em;
     padding: 1%;
-    border-radius: 75%;
+    border-radius: 5px;
 }
 
+.btn-info {
+    background-color: rgb(190, 241, 241);
+    color: rgb(53, 16, 88);
+    border-color: rgb(53, 16, 88);
+}
 .ans {
     text-align: left;
     padding: 1%;
@@ -40,6 +49,10 @@ button {
 
 .q-box {
     padding: 1%;
+    padding-left: 2%;
     width: 75%;
     margin: auto;
+    font-size: 16px;
+    border-color: rgb(53, 16, 88);
+    text-align: left;
 }
