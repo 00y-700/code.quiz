@@ -2,10 +2,44 @@
    text-align: center; 
    font-family: monospace;
 }
+.title-card {
+    background-color: rgb(190, 241, 241);
+    color: rgb(53, 16, 88);
+    border-radius: 25px;
+    width: 33%;
+    margin: auto;
+    padding-top: .33%;
+    padding-bottom: .1%;
+}
+.flex-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 65%;
+    height: 75%;
+}
 
+.progress {
+    width: 75%;
+    margin: auto;
+}
 button {
     margin: 1em;
     width: 25em;
     padding: 1%;
     border-radius: 75%;
+}
+
+.ans {
+    text-align: left;
+    padding: 1%;
+    padding-left: 2%;
+}
+
+.q-box {
+    padding: 1%;
+    width: 75%;
+    margin: auto;
 }

@@ -20,21 +20,30 @@
     <div class="wrapper">
         <div class="card col-expand-md">
             <div class="card-header">
-                <h2>Code Quiz</h2>
+                <div class="card title-card">
+                    <h2>Code Quiz</h2>
+                </div>
             </div>
+           <div class="flex-container card col-expand-sm">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                  <span class="sr-only">70% Complete</span>
+                </div>
+              </div>
             <div id="questions" class="hide"></div>
-            <div class="navigation-btn">
-                <button id="begin" class="btn-primary btn-sm hide">Begin</button>
-                <button id="next" class="btn-primary btn-sm hide">Next Question</button>
+            <div class="nav-q">
+                <button id="next" class="navigation-btn btn-primary btn-sm hide">Next Question</button>
+                <div class="card q-box">Question</div>
             </div>
             <div class="card-body">
-                <button class="btn-info btn-sm">A</button>
+                <button class="btn-info btn-sm ans" value= "Text">A</button>
                 <br>
-                <button class="btn-info btn-sm">B</button>
+                <button class="btn-info btn-sm ans" value= "Text">B</button>
                 <br>
-                <button class="btn-info btn-sm">C</button>
+                <button class="btn-info btn-sm ans" value= "Text">C</button>
                 <br>
-                <button class="btn-info btn-sm">D</button>
+                <button class="btn-info btn-sm ans" value= "Text">D</button>
             </div>
             
             <div class="card-footer text-muted">
@@ -42,6 +51,7 @@
             </div>
         </div>
     </div>
+           </div>
     <script> src="assets/script.js"</script>
 </body>
 </html>
