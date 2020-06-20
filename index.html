@@ -19,12 +19,16 @@
 <body>
     <div class="wrapper">
         <div class="card col-expand-md">
+            
+            <!-- Container -->
+           <div class="flex-container card col-expand-sm">
+            <!-- Title -->
             <div class="card-header">
                 <div class="card title-card">
                     <h2>Code Quiz</h2>
                 </div>
             </div>
-           <div class="flex-container card col-expand-sm">
+               <!-- Progress Bar -->
             <div class="progress">
                 <div class="progress-bar" role="progressbar" aria-valuenow="70"
                 aria-valuemin="0" aria-valuemax="100" style="width:10%">
@@ -32,12 +36,14 @@
                 </div>
               </div>
             <div id="questions" class="hide"></div>
+            <!-- Navigation Buttons -->
             <div class="nav-q">
                 <button class="navigation-btn btn-primary btn-sm hide" onClick="myTimer = setInterval(myCounter, 1000)">Start Quiz</button>
                 <button class="navigation-btn btn-primary btn-sm hide" onClick="clearInterval(myTimer)">Finish Quiz</button>
-                <button id="next" class="navigation-btn btn-primary btn-sm hide">Next Question</button>
+                <button id="next" class="navigation-btn btn-primary next-btn btn-sm hide">Next Question</button>
                 <div class="card q-box">Question</div>
             </div>
+            <!-- Answer Buttons -->
             <div class="card-body">
                 <button class="btn-info btn-sm ans" value= "Text">A</button>
                 <br>
@@ -47,17 +53,16 @@
                 <br>
                 <button class="btn-info btn-sm ans" value= "Text">D</button>
             </div>
+            <!-- Timer -->
             <div class="card timer-card">
+                <!-- Adapted from https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_stop -->
                 <p id="demo">Timer</p>
-
-
-
-<script>
-var c = 0;
-function myCounter() {
-  document.getElementById("demo").innerHTML = ++c;
-}
-</script> 
+                <script>
+                var c = 0;
+                function myCounter() {
+                document.getElementById("demo").innerHTML = ++c;
+                }
+                </script> 
             </div>
             <div class="card-footer text-muted">
                 
