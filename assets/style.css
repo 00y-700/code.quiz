@@ -7,7 +7,7 @@
     color: rgb(53, 16, 88);
     border-radius: 5px;
     border-color: rgb(53, 16, 88);
-    width: 33%;
+    width: 50%;
     margin: auto;
     margin-bottom: 2%;
     padding-top: .33%;
@@ -19,18 +19,18 @@
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 2%;
-    width: 65%;
+    width: 50%;
     height: 55%;
 }
 
 .col-expand-sm {
     border-color: rgb(53, 16, 88);
 }
-.progress {
-    width: 75%;
-    margin: auto;
+
+.nav-q {
     margin-top: 2%;
 }
+
 button {
     margin: 1em;
     width: 25em;
@@ -44,13 +44,18 @@ button {
     border-color: rgb(53, 16, 88);
 }
 
-.next-btn {
+#next, #start {
     width: 15em;
     margin: auto;
     margin-bottom: 1em;
     background-color: rgb(53, 16, 88);
     border-color: rgb(53, 16, 88);
 }
+
+.navbtn {
+    width: 15em;
+}
+
 .ans {
     text-align: left;
     padding: 1%;

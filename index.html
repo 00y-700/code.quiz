@@ -9,7 +9,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
  <!-- Added a link to Bootstrap-->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
  <!-- Added a link to our external stylesheet-->
  <link rel="stylesheet" href="assets/style.css">
@@ -26,48 +26,34 @@
                     <h2>Code Quiz</h2>
                 </div>
             </div>
-               <!-- Progress Bar -->
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:10%">
-                  <span class="sr-only">70% Complete</span>
-                </div>
-              </div>
-            <div id="questions" class="hide"></div>
             <!-- Navigation Buttons -->
             <div class="nav-q">
-                <button class="navigation-btn btn-primary btn-sm hide" onClick="myTimer = setInterval(myCounter, 1000)">Start Quiz</button>
-                <button class="navigation-btn btn-primary btn-sm hide" onClick="clearInterval(myTimer)">Finish Quiz</button>
-                <button id="next" class="navigation-btn btn-primary next-btn btn-sm hide">Next Question</button>
-                <div class="card q-box">Question</div>
+                <button type="button" class="btn btn-primary" id="start">Start Quiz</button>
+                <div id="QA" class=" card-body">
+                    <div id="Qs" class="card q-box">Question</div>
+                    <!-- Answer Buttons -->
+                    <button class="btn-info btn-sm ans" id="A">A</button>
+                    <br>
+                    <button class="btn-info btn-sm ans" id="B">B</button>
+                    <br>
+                    <button class="btn-info btn-sm ans" id="C">C</button>
+                    <br>
+                    <button class="btn-info btn-sm ans" id="D">D</button>
+                    <br>
+                    <!-- Next Button -->
+                    <button id="next" class="navigation-btn btn-primary btn-sm hide">Next Question</button> 
+                </div>
+                
             </div>
-            <!-- Answer Buttons -->
-            <div class="card-body">
-                <button class="btn-info btn-sm ans" value= "Text">A</button>
-                <br>
-                <button class="btn-info btn-sm ans" value= "Text">B</button>
-                <br>
-                <button class="btn-info btn-sm ans" value= "Text">C</button>
-                <br>
-                <button class="btn-info btn-sm ans" value= "Text">D</button>
-            </div>
-            <!-- Timer -->
-            <div class="card timer-card">
-                <!-- Adapted from https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_stop -->
-                <p id="demo">Timer</p>
-                <script>
-                var c = 0;
-                function myCounter() {
-                document.getElementById("demo").innerHTML = ++c;
-                }
-                </script> 
-            </div>
+            
+            
+            
             <div class="card-footer text-muted">
                 
             </div>
         </div>
     </div>
            </div>
-    <script> src="assets/script.js"</script>
+    <script src="assets/script.js"> </script>
 </body>
 </html>
