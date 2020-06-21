@@ -74,13 +74,28 @@ function showD() {
 
 function answerA() {
     console.log("answerA")
+    alert("false")
 }
 function answerB() {
     console.log("answerB")
+    if(answerArrayC = "At the bottom of the body") 
+        alert("correct")
+    else
+        alert("false")
 }
 function answerC() {
     console.log("answerC")
-}
+    if(answerArrayC = "Sentence") 
+        alert("correct")
+    else if(answerArrayC = "Application Programming Interface")
+        alert("correct")
+    else
+        alert("false")}
+
 function answerD() {
     console.log("answerD")
+    if(answerArrayC = "!") 
+        alert("correct")
+    else
+        alert("false")
 }
