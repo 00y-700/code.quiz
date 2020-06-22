@@ -30,46 +30,68 @@ function next() {
     showC()
     showD()
 }
+var i = 0;
 
 function updateQ() {
-    var questionArray = ["Where in the HTML does the link to an external Javascript file belong?", "What is the Emmet Abbreviation to call the basic structure of an HTML document?", 
+    const questionArray = ["Where in the HTML does the link to an external Javascript file belong?", "What is the Emmet Abbreviation to call the basic structure of an HTML document?", 
     "What is an API?", "Which of the following is not a Data Type in Javascript?"]; 
-
-    var currentQ = 0;
-
-    for(var i=0, len = questionArray.length, text = ""; i < len; i++){
-        text = questionArray[i]}
-        questionBox.innerHTML = text;
+    text = questionArray[i];
+    questionBox.innerHTML = text;
+    if(i < questionArray.length -1) {
+        i++;
     }
-
+    else {
+        i = 0;
+    }
+}
+var A = 0;
 function showA() {
     var answerArray = ["In the head section", "$", "Automated Program Information", "String"];
-
-    for(var i=0, len = answerArray.length, text = ""; i < len; i++){
-        text = answerArray[i]}
-        answerBtnA.innerHTML = text;
+    text = answerArray[A];
+    answerBtnA.innerHTML = text;
+    if(A < answerArray.length -1) {
+        A++;
+    }
+    else {
+        A = 0;
+    }
 }
 
+var B = 0;
 function showB() {
     var answerArrayB = ["At the bottom of the body", "&&", "Antithetical Purpose Interaction", "Array"];
-
-    for(var i=0, len = answerArrayB.length, text = ""; i < len; i++){
-        text = answerArrayB[i]}
-        answerBtnB.innerHTML = text;
+    text = answerArrayB[B];
+    answerBtnB.innerHTML = text;
+    if(B < answerArrayB.length -1) {
+        B++;
+    }
+    else {
+        B = 0;
+    }
 }
+var C = 0;
 function showC() {
     var answerArrayC = ["You cannot link to external javascript files", "<>", "Application Programming Interface", "Sentence",];
-
-    for(var i=0, len = answerArrayC.length, text = ""; i < len; i++){
-        text = answerArrayC[i]}
-        answerBtnC.innerHTML = text;
+    text = answerArrayC[C];
+    answerBtnC.innerHTML = text;
+    if(C < answerArrayC.length -1) {
+        C++;
+    }
+    else {
+        C = 0;
+    }
 }
+var D = 0;
 function showD() {
-    var answerArrayD = ["Anywhere you want to put it", "!", "Antipodal Pataphysical Idiocy", "Number"];
-
-    for(var i=0, len = answerArrayD.length, text = ""; i < len; i++){
-        text = answerArrayD[i]}
-        answerBtnD.innerHTML = text;
+    var answerArrayD = ["Anywhere you want to put it", "!", "Antimatter Pataphysical Ignorance", "Number"];
+    text = answerArrayD[D];
+    answerBtnD.innerHTML = text;
+    if(D < answerArrayD.length -1) {
+        D++;
+    }
+    else {
+        D = 0;
+    }
 }
 
 function answerA() {
